@@ -28,20 +28,24 @@ function handleClick(event) {
   if (handleMove(position)) {
     setTimeout(function () {
       msg.innerText = `O vencedor foi o jogador ${playerTime + 1}!`;
-      const createBtns = new btns("Restart", function (button) {
-        button.style.cssText = `
+    }, 200);
+  }
+  updateSquares();
+}
+const createBtns = new btns("Restart", function (button) {
+  button.style.cssText = `
         margin-left:45vw;
         border: #111 solid 2px;
         padding: 20px;
         font-size:20px;`;
-        button.addEventListener("mouseenter", style);
-        button.addEventListener("mouseleave", style1);
-        button.addEventListener("click", restart);
-        function restart() {
-          document.location.reload();
-        }
-        function style() {
-          button.style.cssText = `
+  button.addEventListener("mouseenter", style);
+  button.addEventListener("mouseleave", style1);
+  button.addEventListener("click", restart);
+  function restart() {
+    document.location.reload();
+  }
+  function style() {
+    button.style.cssText = `
           margin-left:45vw;
           font-size:20px;
               background-color: #111;
@@ -49,19 +53,16 @@ function handleClick(event) {
             border: 2px #eee solid;
             cursor: pointer;
             padding: 20px;`;
-        }
-        function style1() {
-          button.style.cssText = `
+  }
+  function style1() {
+    button.style.cssText = `
             margin-left:45vw;
             border: #111 solid 2px;
             padding: 20px;
             font-size:20px;`;
-        }
-      });
-    }, 200);
   }
-  updateSquares();
-}
+});
+
 msg.innerText = `Vez do jogador ${playerTime + 1}!`;
 
 function updateSquares() {

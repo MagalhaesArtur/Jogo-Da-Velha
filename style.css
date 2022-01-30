@@ -23,9 +23,6 @@ body {
   width: 400px;
   height: 400px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(300px, 3fr);
-  grid-template-rows: repeat(300px, 3fr);
 }
 
 .square {
@@ -36,13 +33,14 @@ body {
   background-color: #111;
   border: solid 1px #eee;
   display: inline-block;
-  transition-property: width, background-color, border, height;
+  transition-property: width, background-color, border, height, padding;
   transition-duration: 500ms;
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
   text-align: center;
 }
 .square:hover {
+  padding-top: 6px;
   text-align: center;
   height: 110px;
   background-color: #666;
@@ -52,11 +50,6 @@ body {
 
 .o {
   margin-top: 15px;
-
-  transition-property: margin-top, margin-left;
-  transition-delay: 200ms;
-  transition-duration: 500ms;
-  transition-timing-function: ease;
 }
 
 .o::after {
@@ -69,10 +62,6 @@ body {
 .x {
   margin-top: 15px;
   content: none;
-  transition-property: margin-top, margin-left, content;
-  transition-delay: 200ms;
-  transition-duration: 500ms;
-  transition-timing-function: ease;
 }
 
 .x::after {
