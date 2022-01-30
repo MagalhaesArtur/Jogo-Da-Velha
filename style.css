@@ -1,0 +1,79 @@
+* {
+  font-family: GigaSansBlack;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #252333, #4941b8);
+}
+
+@font-face {
+  font-family: GigaSansBlack;
+  src: url(./fonts/giga-sans-black.otf);
+}
+.title {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: #eee;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.square {
+  position: relative;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: #111;
+  border: solid 1px #eee;
+  display: inline-block;
+  transition-property: width, background-color, border, height;
+  transition-duration: 500ms;
+  transition-delay: 100ms;
+  transition-timing-function: ease-in-out;
+  text-align: center;
+}
+.square:hover {
+  height: 110px;
+  background-color: #666;
+  border-color: #111;
+  width: 110px;
+}
+
+.o {
+  margin-top: 15px;
+
+  transition-property: margin-top, margin-left;
+  transition-delay: 200ms;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+.o::after {
+  left: 16%;
+  position: absolute;
+  content: "\2B55";
+  font-size: 50px;
+}
+
+.x {
+  margin-top: 15px;
+  content: none;
+  transition-property: margin-top, margin-left, content;
+  transition-delay: 200ms;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+}
+
+.x::after {
+  left: 16%;
+  position: absolute;
+  content: "\274C";
+  font-size: 50px;
+}
