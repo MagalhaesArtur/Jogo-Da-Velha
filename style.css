@@ -23,6 +23,9 @@ body {
   width: 400px;
   height: 400px;
   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(300px, 3fr);
+  grid-template-rows: repeat(300px, 3fr);
 }
 
 .square {
@@ -77,3 +80,36 @@ body {
   content: "\274C";
   font-size: 50px;
 }
+
+.optionsContainer {
+  width: 40%;
+  margin-top: 30px;
+  text-align: center;
+  margin: auto;
+}
+
+.msg {
+  color: #eee;
+}
+
+/* .restart {
+  width: 100px;
+  border: #111 solid 2px;
+  padding: 20px;
+  transition-property: background-color, border, color, width, padding-top,
+    padding-bottom, padding-right, padding-left;
+  transition-delay: 100ms;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  visibility: hidden;
+}
+.restart:hover {
+  background-color: #111;
+  color: #eee;
+  border: 2px #eee solid;
+  cursor: pointer;
+  padding-top: 22px;
+  padding-left: 60px;
+  padding-bottom: 22px;
+  padding-right: 60px;
+} */
