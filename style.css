@@ -43,6 +43,7 @@ body {
   text-align: center;
 }
 .square:hover {
+  text-align: center;
   height: 110px;
   background-color: #666;
   border-color: #111;
@@ -91,25 +92,3 @@ body {
 .msg {
   color: #eee;
 }
-
-/* .restart {
-  width: 100px;
-  border: #111 solid 2px;
-  padding: 20px;
-  transition-property: background-color, border, color, width, padding-top,
-    padding-bottom, padding-right, padding-left;
-  transition-delay: 100ms;
-  transition-duration: 500ms;
-  transition-timing-function: ease-in-out;
-  visibility: hidden;
-}
-.restart:hover {
-  background-color: #111;
-  color: #eee;
-  border: 2px #eee solid;
-  cursor: pointer;
-  padding-top: 22px;
-  padding-left: 60px;
-  padding-bottom: 22px;
-  padding-right: 60px;
-} */
