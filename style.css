@@ -42,10 +42,10 @@ body {
 .square:hover {
   padding-top: 6px;
   text-align: center;
-  height: 110px;
+  height: 105px;
   background-color: #666;
   border-color: #111;
-  width: 110px;
+  width: 105px;
 }
 
 .o {
@@ -72,6 +72,7 @@ body {
 }
 
 .optionsContainer {
+  position: relative;
   width: 40%;
   margin-top: 30px;
   text-align: center;
@@ -80,4 +81,5 @@ body {
 
 .msg {
   color: #eee;
+  margin-bottom: 20px;
 }

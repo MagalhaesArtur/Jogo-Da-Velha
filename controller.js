@@ -1,6 +1,6 @@
 class btns {
   constructor(text, callback) {
-    const $body = document.querySelector("body");
+    const $body = document.querySelector(".optionsContainer");
     const $button = document.createElement("button");
     $button.textContent = text;
 
@@ -34,7 +34,7 @@ function handleClick(event) {
 }
 const createBtns = new btns("Restart", function (button) {
   button.style.cssText = `
-        margin-left:45vw;
+        margin:auto;
         border: #111 solid 2px;
         padding: 20px;
         font-size:20px;`;
@@ -46,7 +46,7 @@ const createBtns = new btns("Restart", function (button) {
   }
   function style() {
     button.style.cssText = `
-          margin-left:45vw;
+    margin:auto;
           font-size:20px;
               background-color: #111;
             color: #eee;
@@ -56,7 +56,7 @@ const createBtns = new btns("Restart", function (button) {
   }
   function style1() {
     button.style.cssText = `
-            margin-left:45vw;
+    margin:auto;
             border: #111 solid 2px;
             padding: 20px;
             font-size:20px;`;
