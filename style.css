@@ -8,8 +8,7 @@ body {
   background: linear-gradient(to right, #252333, #4941b8);
 }
 div {
-  display: block;
-  margin: 0;
+  text-align: center;
 }
 
 @font-face {
@@ -27,7 +26,7 @@ div {
   width: 400px;
   height: 400px;
   margin: auto;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .square {
